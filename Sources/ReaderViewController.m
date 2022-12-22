@@ -458,7 +458,7 @@
 	[self updateContentViews:theScrollView]; // Update content views
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.")
 {
 	[super viewDidAppear:animated];
 
@@ -469,7 +469,7 @@
 #endif // end of READER_DISABLE_IDLE Option
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.")
 {
 	[super viewWillDisappear:animated];
 
@@ -602,7 +602,7 @@
 	}
 }
 
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.")
 {
 	if (recognizer.state == UIGestureRecognizerStateRecognized)
 	{
