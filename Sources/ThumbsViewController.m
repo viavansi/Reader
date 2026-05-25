@@ -28,8 +28,11 @@
 #import "ReaderThumbRequest.h"
 #import "ReaderThumbCache.h"
 #import "ReaderDocument.h"
+#import "ReaderResources.h"
 
 #import <QuartzCore/QuartzCore.h>
+
+#define READER_IMAGE(name) [UIImage imageNamed:(name) inBundle:[ReaderResources bundle] compatibleWithTraitCollection:nil]
 
 @interface ThumbsViewController () <ThumbsMainToolbarDelegate, ReaderThumbsViewDelegate>
 
@@ -431,7 +434,7 @@
 
 		[imageView addSubview:tintView];
 
-		UIImage *image = [UIImage imageNamed:@"Reader-Mark-Y"];
+		UIImage *image = READER_IMAGE(@"Reader-Mark-Y");
 
 		bookMark = [[UIImageView alloc] initWithImage:image];
 

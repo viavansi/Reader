@@ -6,6 +6,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 // @see http://www.verypdf.com/document/pdf-format-reference/pg_0615.htm
 #define kReaderAnnotationTypeLink "Link"
